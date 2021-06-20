@@ -1,2 +1,2 @@
-# IntroToWebResume
-Repo to manage source code for Code Space exercises
+# WebDesignResume
+Repo to manage source code for CodeSpace Resumes
