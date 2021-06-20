@@ -1,145 +1,404 @@
-<!doctype html>
-<html lang="eng">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="My Digital Resume">	
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashleigh's ResumeV!</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css"  href="stylesV!.css">
-</head>
-<body>
-<header class="header">
-<hgroup>
-    <h1>Ashleigh Manyanye</h1>
-    <h2>Web Developer</h2>
- </hgroup>
-</header>
-    
-<div class="wrapper" >
-   <!--Sidebar-->
-            <div class="sidebar">
-            <!--Profile Image-->
-                <center><img  src="IMG_20210227_142457.jpg" alt="My Profile Picture" class="profile_img"></center>
+<!DOCTYPE html>
+<html lang="en">
 
-                <div class="menu">
-            <!--Menu-->
-                <ul class="list">
-                    <li class="menu_list"><a href="#About_Me" class="links">About</a></li>
-                    <li class="menu_list"><a href="#Interests" class="links">Interests</a></li>
-                    <li class="menu_list"><a href="#Skills" class="links">Skills</a></li>
-                    <li class="menu_list"><a href="#Experience" class="links">Experience</a></li>
-                    <li class="menu_list"><a href="#Education" class="links">Education</a></li>
-                    <li class="menu_list"><a href="#Activities" class="links">Activities</a></li>
-                    <li class="menu_list"><a href="#Social Media"class="links">Social Media</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/stylesX!.css">
+    <title>Ashleigh Tesla</title>
+    <style>
+        main {
+            background: url("static/images/IMG-20210121-WA0017.jpg");
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+
+<body class="scroll-behavior-smooth">
+    <header class="p-sm-2 header">
+
+        <hgroup class="text-center">
+            <p class="h1">Ashleigh Manyanye</p>
+            <p class="h2">Web Developer</p>
+        </hgroup>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#MyPicture">
+                <img src="static/images/IMG_20210227_142457.jpg" alt="Ashleigh Manyanye" width="40" height="40"
+                    class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="info" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About_Me">Myself</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- my information button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-info dropdown-toggle text-success"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                My Info
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Interests">Interests</a></li>
+                                <li><a class="dropdown-item" href="#Skills">Skills</a></li>
+                                <li><a class="dropdown-item" href="#Experience">Experience</a></li>
+                                <li><a class="dropdown-item" href="#Education">Education</a></li>
+                                <li><a class="dropdown-item" href="#Activities">Activities</a></li>
+                                <li><a class="dropdown-item" href="#Social Media">Social Media</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#MyPicture">Profile</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
-    <!--Content info-->
-        <div class="content_info">
-        <section id="about_me_section">
-        <!--About Me-->
-        <h3 id="About_Me">About Me</h3>
-            <p>By learning computer science for the first time in school, I fell in love with developing computer programs. I would love to develop programs that run electrical circuits and components. I'm also interested in the development of mobile applications and software that control robots. Developing software really puts me in the seventh <b>"7th"</b> heaven on the ninth <b>"9th"</b> cloud.</p>
-        </section>
-        <section id="interests_section">
-            <!--Interests-->
-            <h3 id="Interests">Interests</h3>
-            <ul>
-            <li>Skating</li>
-            <li>Coding</li>
-            <li>Surfing</li>
-            <li>MotorSport</li>
-            <li>Swimming</li>
-            </ul>
-        </section>
-        <section id="skills_section">
-            <!--Skills-->
-            <h3 id="Skills">Skills</h3>
-            <img src="05_pastry_bakery-shops.1920x0.jpg" alt="Pizzaiolo" width="100" height="100">
-            <img src="IMG-20210121-WA0017.jpg" alt="Singer Producer Songwriter" width="100" height="100">
-            <img src="89049676_230452275003311_1576619156478885888_n.jpg" alt="Electrician" width="100" height="100">
-        </section>
-        <section id="experience_section">
+    </nav>
+
+    <main class="container-fluid">
+
+        <!--Main Content-->
+
+        <div class="container" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <div class="row">
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#MyPicture">Profile</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#About_Me">Myself</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#Interests">Interests</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#Skills">Skills</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#Experience">Experience</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#Education">Education</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item"><a href="#Social Media">Media</a></li>
+                    </div>
+                    <div class="col">
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#MyPicture">Home</a></li>
+                    </div>
+                </div>
+            </ol>
+        </div>
+
+        <div class="card container-fluid text-end m-1">
+            <div class="card-header">
+                My Favorite
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>In him we trust,and so we approach with confidence, through his faith</p>
+                    <footer class="blockquote-footer"> Catholic Bible <cite title="Source Title">Ephessians~3:12</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="container-fluid justify-content-center text-center">
+            <!--Profile Image-->
+            <picture class="card-img-center" id="MyPicture">
+                <source media="(max-width: 605px)" srcset="static/images/IMG_20210227_142455.jpg" id="MyPicture">
+                <source media="(max-width: 1360px)" srcset="static/images/IMG_20210227_142456.jpg" id="MyPicture">
+                <img src="static/images/IMG_20210227_142457.jpg" alt="Ashleigh Manyanye" class="img-fluid"
+                    id="MyPicture">
+            </picture>
+            <div class="card-body">
+                <h5 class="card-title">Myself</h5>
+                <p class="card-text">My Profile</p>
+            </div>
+            <div class="card-body">
+                <a href="#MyPicture" class="card-link">My Picture</a>
+                <a href="#About_Me" class="card-link">Myself</a>
+                <a href="#Interests" class="card-link">My Interests</a>
+                <a href="#Skills" class="card-link">My Skills</a>
+                <a href="#Experience" class="card-link">My Experience</a>
+                <a href="#Education" class="card-link">My Education</a>
+                <a href="#Activities" class="card-link">My Activities</a>
+                <a href="#Social Media" class="card-link">My Media</a>
+            </div>
+        </div>
+        <article class="container-fluid">
+            <!--About Me-->
+            <p class="h3" id="About_Me">About Me</p>
+            <p>By learning computer science for the first time in school, I fell in love with developing computer
+                programs. I would love to develop programs that run electrical circuits and components. I'm also
+                interested in the development of mobile applications and software that control robots. Developing
+                software really puts me in the seventh <b>"7th"</b> heaven on the ninth <b>"9th"</b> cloud.</p>
+        </article>
+
+        <div id="carouselExampleCaptions" class="carousel slide container-fluid justify-content-center"
+            data-bs-ride="carousel" style="width: 80vw;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="d-block w-100"
+                        alt="Singer Producer Songwriter">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="h5" href="#pizzaiolo">First Skill Label</a>
+                        <p class="h3">Pizzaiolo Tesla</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/IMG-20210121-WA0017.jpg" class="d-block w-100"
+                        alt="Singer Producer Songwriter">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="h5" href="#artist">Second Skill label</a>
+                        <p class="h3">Artist Tesla</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg" class="d-block w-100"
+                        alt="Electrician">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="h5" href="#engineer">Third Skill label</a>
+                        <p class="h3" id="Skills">Engineer Tesla</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <article>
+                        <!--Interests-->
+                        <p class="h3" id="Interests">Interests</p>
+                        <div class="card" style="width: 7.2rem;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Skating</li>
+                                <li class="list-group-item">Coding</li>
+                                <li class="list-group-item">Surfing</li>
+                                <li class="list-group-item">MotorSport</li>
+                                <li class="list-group-item">Swimming</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article>
+                        <!--Skills-->
+                        <p class="h3" id="Skills">Skills</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card" style="width: 7.5rem;">
+                                        <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="card-img"
+                                            id="pizzaiolo" alt="Pizzaiolo">
+                                        <div class="card-body">
+                                            <p class="card-text">Pizzaiolo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+
+
+                                    <div class="card text-center" style="width: 7.5rem;">
+                                        <img src="static/images/IMG-20210121-WA0017.jpg" class="card-img-center"
+                                            id="artist" alt="Singer Producer Songwriter">
+                                        <div class="card-body">
+                                            <p class="card-text">Singer Producer Songwriter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card text-end" style="width: 7.5rem;">
+                                        <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg"
+                                            class="card-img" id="engineer" alt="Electrician">
+                                        <div class="card-body">
+                                            <p class="card-text">Electrician</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <article>
             <!--Experience-->
-             <h3 id="Experience">Experience</h3>
-            <div class="inline_flex full_width">
-                <span class="min_width">2019</span>
-                 <ul class="list">
-                   <li>Worked at TM Pic'n'Pay as a bakery table hand</li>
-                   <li>Baked quality products</li>
-                   <li>Products made include buns, kitka, bread, rolls and tealoaf</li>
-              </ul>
-        </div>
-        <div class="inline_flex full_width">
-            <span class="min_width">2017 - 2018</span>
-                  <ul class="list">
-                    <li>Joined the school church choir as a catholic member</li>
-                    <li>Attended the Catholic Schools Association <b>CASA</b> competition and brought home a bronze medal</li>
-                    <li>Attended the diocesan competition and came with a silver medal</li>
-                   </ul>
-        </div>
-        <div class="inline_flex full_width">
-        <span class="min_width">2015 - 2016</span>
-              <ul class="list">
-                <li>Chess and Darts Player</li>
-              </ul>
-        </div>
-     </section>
-        <section id="education_section"> 
+            <p class="h3" id="Experience">Experience</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2019</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>Worked at TM Pic'n'Pay as a bakery table hand</li>
+                        <li>Baked quality products</li>
+                        <li>Products made include buns, kitka, bread, rolls and tealoaf</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2017 - 2018</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>Joined the school church choir as a catholic member</li>
+                        <li>Attended the Catholic Schools Association <b>CASA</b> competition and brought home a bronze
+                            medal</li>
+                        <li>Attended the diocesan competition and came with a silver medal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2015 - 2016</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>Chess and Darts Player</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article>
             <!--Education-->
-            <h3 id="Education">Education</h3>
-        <div class="inline_flex full_width">
-            <span class="min_width">2020</span>
-                  <ul class="list">
-                      <li>First year student at Stellenbosch University</li>
-                      <li>Earned an INTRO TO WEB certificate with Codespace College</li>
-                      <li>Received an Introduction To Coding certificate with Digital Regenesys Business School</li>
-                   </ul>
-        </div>
-        <div class="inline_flex full_width">
-            <span class="min_width">2017 - 2018</span>
-                    <ul class="list">
-                      <li>Saint Dominics High School</li>
-                      <li>Sat for 3 'A' Level subjects</li>
-                      <li>Passed all the 3 'A' Level subjects</li>
-                      <li>Achieved the benchmark considered to pass 'A' Level</li>
-                     </ul>
-        </div>
-        <div class="inline_flex full_width">
-           <span class="min_width">2015 - 2016</span>
-                 <ul class="list">
-                   <li>Saint Faiths High School</li>
-                   <li>Sat for 10 'O' Level subjects</li>
-                   <li>Passed all 10 'O' Level subjects</li>
-                   <li>Achieved the required 5+ 'O' subjects considered to pass 'O' Level</li>
-                 </ul>
-        </div>
-</section>
-        <section id="activities_section">
-              <!--Activities-->
-                <h3 id="Activities">Additional Activities</h3>
-                     <ul>
-                        <li>Baking</li>
-                        <li>Charity</li>
-                        <li>Gardening</li>
-                        <li>Cleaning</li>
-                        <li>Shopping</li>
-                        <li>Cooking</li>
-                        <li>Singing</li>
+            <p class="h3" id="Education">Education</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2020</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>First year student at Stellenbosch University</li>
+                        <li>Earned an INTRO TO WEB certificate with Codespace College</li>
+                        <li>Received an Introduction To Coding certificate with Digital Regenesys Business School</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2017 - 2018</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>Saint Dominics High School</li>
+                        <li>Sat for 3 'A' Level subjects</li>
+                        <li>Passed all the 3 'A' Level subjects</li>
+                        <li>Achieved the benchmark considered to pass 'A' Level</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3"><b>2015 - 2016</b></div>
+                    <ul class="col-md-9 list-unstyled list">
+                        <li>Saint Faiths High School</li>
+                        <li>Sat for 10 'O' Level subjects</li>
+                        <li>Passed all 10 'O' Level subjects</li>
+                        <li>Achieved the required 5+ 'O' subjects considered to pass 'O' Level</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+    <article>
+        <!--Activities-->
+        <!-- Default dropup button -->
+        <div class="btn-group dropup text-center">
+            <button type="button" class="btn btn-info h3 dropdown-toggle badge rounded-pill" data-bs-toggle="dropdown"
+                aria-expanded="false" id="#Activities">
+                <span class="badge bg-info text-white">
+                    <p class="h3">Additional Activities</p>
+                </span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="listDropdownMenuLink">
+                <!-- Dropdown menu links -->
+                <li class="dropup-item">Baking</li>
+                <li class="dropup-item">Charity</li>
+                <li class="dropup-item">Gardening</li>
+                <li class="dropup-item">Cleaning</li>
+                <li class="dropup-item">Shopping</li>
+                <li class="dropup-item">Coooking</li>
+                <li class="dropup-item">Singing</li>
             </ul>
-  </section>
-</div>
-</div>
+        </div>
+    </article>
+    <div class="card text-center container">
+        <div class="card-header">
+            Profile
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">My Profile Picture</h5>
+            <p class="card-text">Ashleigh Manyanye</p>
+            <a href="#MyPicture" class="btn btn-info">Ashleigh</a>
+        </div>
+        <div class="card-footer text-muted">
+            Tanaka Tesla
+        </div>
+    </div>
     <!--footer section-->
-    <footer>      
-<div>
-    <!--Social Media-->
-    <h3 id="Social Media">Get In Touch</h3>
-        <a href="tel: +27 631 451 765" target="_blank"><img src="old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg" alt="Phone Icon" height="40" width="40"></a>
-        <a href="mailto: ashleightesla@gmail.com" target="_blank"><img src="8fc37b74b608a622588fbaa361485f32.png" alt="Gmail Icon" height="40" width="40"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="is (21).jpg" alt="LinkedIn Icon" height="40" width="40"></a>
-</div>
-</footer>
+    <footer class="text-center p-sm-2 footer">
+        <div>
+            <!--Social Media-->
+            <p class="h3" id="Social Media">Get In Touch</p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <a href="tel: +27 631 451 765?call" target="_blank"><img class="mySocial"
+                                src="static/images/old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg"
+                                alt="Phone Icon" height="40" width="40"></a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/aaron-leeroy-manyanye-8828101a6" target="_blank"><img
+                                class="mySocial" src="static/images/black-linkedin-icon.png" alt="LinkedIn Icon"
+                                height="40" width="40"></a>
+                    </div>
+                    <div class="col">
+                        <a href="mailto:https://www.ashleightesla@gmail.com" target="_blank"><img class="mySocial"
+                                src="static/images/mail-icon-in-flat-style-email-symbol-in-flat-style-vector-28061204.jpg"
+                                alt="Gmail Icon" height="40" width="40"></a>
+                    </div>
+                    <div class="col">
+                        <a href="skype:live:aaronleeroy1998?chat" target="_blank"><img class="mySocial"
+                                src="static/images/614780.png" alt="Skype Icon" height="40" width="40"></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
