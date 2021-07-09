@@ -16,6 +16,47 @@ ul.list li:first-child {
     font-weight: 500;
 }
 
+.cad {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Lobster', cursive;
+    border-radius: 2vw;
+    position: absolute;
+}
+
+.front {
+    /* background: linear-gradient(yellow, gold); */
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    /* background: linear-gradient(#08aeea, #2af598); */
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.contain:hover .cad {
+    transform: rotateY(180deg)
+}
+
+.contain {
+    perspective: 1000px
+}
+
 @keyframes logo {
     0% {
         filter: hue-rotate(90deg);
@@ -59,12 +100,14 @@ ul.list li:first-child {
     .card {
         border: 0%;
     }
-    .header {
+    .header,
+    .front {
         background-color: rgb(154, 231, 154);
         color: white;
         padding: 5px;
     }
-    .footer {
+    .footer,
+    .back {
         background-color: rgb(154, 231, 154);
         color: white;
     }
@@ -74,12 +117,14 @@ ul.list li:first-child {
 /* Small devices (portrait tablets and large phones, 604.72441px and up) */
 
 @media only screen and (min-width: 604.72441px) {
-    .header {
+    .header,
+    .front {
         background-color: rgb(154, 231, 154);
         color: white;
         padding: 5px;
     }
-    .footer {
+    .footer,
+    .back {
         background-color: rgb(154, 231, 154);
         color: rgb(255, 255, 255);
     }
@@ -89,12 +134,14 @@ ul.list li:first-child {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    .header {
+    .header,
+    .front {
         background-color: gold;
         color: white;
         padding: 5px;
     }
-    .footer {
+    .footer,
+    .back {
         background-color: gold;
         color: white;
     }
@@ -104,12 +151,14 @@ ul.list li:first-child {
 /* Large devices (laptops/desktops, 960px and up) */
 
 @media only screen and (min-width: 960px) {
-    .header {
+    .header,
+    .front {
         background-color: violet;
         color: rgb(255, 255, 255);
         padding: 5px;
     }
-    .footer {
+    .footer,
+    .back {
         background-color: violet;
         color: white;
     }
@@ -119,12 +168,14 @@ ul.list li:first-child {
 /* Extra large devices (large laptops and desktops, 1511.81102px and up) */
 
 @media only screen and (min-width: 1511.81102px) {
-    .header {
+    .header,
+    .front {
         background-color: violet;
         color: white;
         padding: 5px;
     }
-    .footer {
+    .footer,
+    .back {
         background-color: violet;
         color: white;
     }
