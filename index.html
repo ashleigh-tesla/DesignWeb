@@ -5,16 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/stylesX!.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/stylesX!!.css">
     <title>Ashleigh Tesla</title>
-<!--     <style>
-        body {
-            background: url("static/images/IMG-20200705-WA0003.jpg");
-            background-repeat: repeat;
-        }
-    </style> -->
 </head>
 
 <body class="scroll-behavior-smooth">
@@ -26,51 +19,56 @@
         </hgroup>
     </header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#MyPicture">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#MyPicture">Ashleigh
                 <img src="static/images/IMG_20210227_142457.jpg" alt="Ashleigh Manyanye" width="40" height="40"
-                    class="rounded-circle">
+                    class="d-inline-block align-text-top rounded-circle">
             </a>
-            <button class="navbar-toggler" type="info" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#About_Me">Myself</a>
+                        <a class="nav-link active" aria-current="page" href="#MyPicture">Tanaka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#MyPicture">Manyanye</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <!-- my information button -->
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-info dropdown-toggle text-success"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                My Info
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#Interests">Interests</a></li>
-                                <li><a class="dropdown-item" href="#Skills">Skills</a></li>
-                                <li><a class="dropdown-item" href="#Experience">Experience</a></li>
-                                <li><a class="dropdown-item" href="#Education">Education</a></li>
-                                <li><a class="dropdown-item" href="#Activities">Activities</a></li>
-                                <li><a class="dropdown-item" href="#Social Media">Social Media</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#MyPicture">Profile</a></li>
-                            </ul>
-                        </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Myself
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#About_Me">About Me</a></li>
+                            <li><a class="dropdown-item" href="#Interests">Interests</a></li>
+                            <li><a class="dropdown-item" href="#Skils">Skills</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#Education">Education</a></li>
+                            <li><a class="dropdown-item" href="#Activities">Activities</a></li>
+                            <li><a class="dropdown-item" href="#Social Media">Social Media</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid">
+
+    <main class="container-fluid mainn py-2">
 
         <!--Main Content-->
 
-        <div class="container" aria-label="breadcrumb">
+        <div class="container-fluid bg-light" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <div class="row">
                     <div class="col">
@@ -83,7 +81,7 @@
                         <li class="breadcrumb-item"><a href="#Interests">Interests</a></li>
                     </div>
                     <div class="col">
-                        <li class="breadcrumb-item"><a href="#Skills">Skills</a></li>
+                        <li class="breadcrumb-item"><a href="#Skils">Skills</a></li>
                     </div>
                     <div class="col">
                         <li class="breadcrumb-item"><a href="#Experience">Experience</a></li>
@@ -101,73 +99,66 @@
             </ol>
         </div>
 
-        <div class="card container-fluid text-end m-1">
-            <div class="card-header">
+        <div class="card container-fluid text-end m-1 bg-light">
+            <div class="card-header text-center">
                 My Favorite
             </div>
             <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>In him we trust,and so we approach with confidence, through his faith</p>
-                    <footer class="blockquote-footer"> Catholic Bible <cite title="Source Title">Ephessians~3:12</cite>
+                <blockquote class="blockquote mb-0 text-center">
+                    <p>nor the heights, nor the depths, nor any other created thing, will be able to separate us from the love of God, which is in Christ Jesus our Lord.
+                    </p>
+                    <footer class="blockquote-footer text-end"> Catholic Bible <cite title="Source Title">Romans 8:39
+                        </cite>
                     </footer>
                 </blockquote>
             </div>
         </div>
 
-        <div class="container-fluid justify-content-center text-center">
-            <!--Profile Image-->
-            <picture class="card-img-center" id="MyPicture">
-                <source media="(max-width: 605px)" srcset="static/images/IMG_20210227_142455.jpg"
-                    class="mx-auto d-block" id="MyPicture">
-                <source media="(max-width: 1360px)" srcset="static/images/IMG_20210227_142456.jpg"
-                    class="mx-auto d-block" id="MyPicture">
-                <img src="static/images/IMG_20210227_142457.jpg" alt="Ashleigh Manyanye"
-                    class="img-fluid mx-auto d-block" id="MyPicture">
-            </picture>
-            <div class="card-body">
-                <h5 class="card-title">Myself</h5>
-                <p class="card-text">My Profile</p>
-            </div>
-            <div class="card-body">
-                <a href="#MyPicture" class="card-link">My Picture</a>
-                <a href="#About_Me" class="card-link">Myself</a>
-                <a href="#Interests" class="card-link">My Interests</a>
-                <a href="#Skills" class="card-link">My Skills</a>
-                <a href="#Experience" class="card-link">My Experience</a>
-                <a href="#Education" class="card-link">My Education</a>
-                <a href="#Activities" class="card-link">My Activities</a>
-                <a href="#Social Media" class="card-link">My Media</a>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <!--Profile Image-->
+                    <picture class="card-img-center" id="MyPicture">
+                        <source media="(max-width: 605px)" srcset="static/images/IMG_20210227_142455.jpg" class="mx-auto d-block" id="MyPicture">
+                        <source media="(max-width: 1360px)" srcset="static/images/IMG_20210227_142456.jpg" class="mx-auto d-block" id="MyPicture">
+                        <img src="static/images/IMG_20210227_142457.jpg" alt="Ashleigh Manyanye" class="img-fluid mx-auto d-block" id="MyPicture">
+                    </picture>
+                </div>
             </div>
         </div>
         <div class="bs-example m-auto-20px">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container-fluid">
-                    <h1>Explore the World Wide Web</h1>
-                    <p class="lead">CodeSpace helped me to come up with
-                        <a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank">my first website</a>
+                    <h1>Learn to Create Websites</h1>
+                    <p class="lead">CodeSpace helped me come up with
+                        <a href="https://ashleigh-tesla.github.io/DesignWeb/" class="text-success" target="_blank">my
+                            first website</a>
                     </p>
-                    <p><a href="https://ashleigh-tesla.github.io/DesignWeb/" target="_blank"
-                            class="btn btn-info btn-sm">That's My Resume</a></p>
+                    <p class="lead">In today's world internet is the most popular way of connecting with the people. At
+                        <a class="text-success" href="https://www.codespace.co.za/" target="_blank">Codespace</a> you will learn the essential of web development technologies along with real life practice examples, so that you can create your own website
+                        to connect with the people around the world.
+                    </p>
+                    <p><a href="https://www.codespace.co.za/" target="_blank" class="btn btn-outline-info btn-sm">Start
+                            Learning
+                            Today</a></p>
                 </div>
             </div>
         </div>
+
         <article class="container-fluid">
             <!--About Me-->
             <p class="h3" id="About_Me">About Me</p>
-            <p>By learning computer science for the first time in school, I fell in love with developing computer
-                programs. I would love to develop programs that run electrical circuits and components. I'm also
-                interested in the development of mobile applications
-                and software that control robots. Developing software really puts me in the seventh <b>"7th"</b> heaven
-                on the ninth <b>"9th"</b> cloud.</p>
+            <p>By learning computer science for the first time in school, I fell in love with developing computer programs. I would love to develop programs that run electrical circuits and components. I'm also interested in the development of mobile applications
+                and software that control robots. Developing software really puts me in the seventh <b>"7th"</b> heaven on the ninth <b>"9th"</b> cloud.</p>
         </article>
+
         <div class="container-fluid">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Did It Help?
+            <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Did You Like It?
             </button>
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -217,15 +208,13 @@
                             </div>
                             <div class="p-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
-                                        checked disabled>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
                                     <label class="form-check-label" for="flexCheckDefault">
                                         You are impressed by my website
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
-                                        checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                         You are embarrassed
                                     </label>
@@ -240,94 +229,65 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="carouselExampleCaptions" class="carousel slide container-fluid justify-content-center" data-bs-ride="carousel" style="width: 80vw;">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="mx-auto d-block" alt="Singer Producer Songwriter">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a class="h5" href="#pizzaiolo">First Skill Label</a>
-                        <p class="h3">Pizzaiolo Tesla</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="static/images/IMG-20210121-WA0017.jpg" class="mx-auto d-block" alt="Singer Producer Songwriter">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a class="h5" href="#artist">Second Skill label</a>
-                        <p class="h3">Artist Tesla</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg" class="mx-auto d-block" alt="Electrician">
-                    <div class="carousel-caption d-none d-md-block">
-                        <a class="h5" href="#engineer">Third Skill label</a>
-                        <p class="h3" id="Skills">Engineer Tesla</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-
 
         <div id="carouselExampleIndicators" class="carousel slide m-3" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <picture class="card-img-center" id="MyPicture">
-                            <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1710432.jpg">
-                            <source media="(max-width: 1360px)" srcset="static/images/IMG_20210129_1710431.jpg">
-                            <img src="static/images/IMG_20210129_1710430.jpg" class="align-middle img-fluid"
-                                alt="Aaron">
-                        </picture>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-7">
+                            <picture class="card-img-center" id="MyPicture">
+                                <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1710432.jpg">
+                                <source media="(max-width: 1360px)" srcset="static/images/IMG_20210129_1710431.jpg">
+                                <img src="static/images/IMG_20210129_1710430.jpg" class="align-middle img-fluid" alt="Aaron">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="h5 text-success" href="#artist">First label</a>
+                                <p class="h3 text-muted">Artist Tesla</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <picture>
-                            <source media="(max-width: 605px)" srcset="static/images/IMG_20210227_142455.jpg">
-                            <source media="(max-width: 1360px)"
-                                srcset="static/images/89049676_230452275003311_1576619156478885888_n.jpg">
-                            <img src="static/images/IMG_20210227_142457.jpg" class="align-middle img-fluid" alt="Aaron">
-                        </picture>
+                    <div class=" row d-flex justify-content-center">
+                        <div class="col-sm-7">
+                            <picture>
+                                <source media="(max-width: 605px)" srcset="static/images/IMG_20210227_142455.jpg">
+                                <source media="(max-width: 1360px)" srcset="static/images/89049676_230452275003311_1576619156478885888_n.jpg">
+                                <img src="static/images/IMG_20210227_142457.jpg" class="align-middle img-fluid" alt="Aaron">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="h5 text-success" href="#engineer">Second label</a>
+                                <p class="h3 text-muted" id="Skills">Engineer Tesla</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <picture>
-                            <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1703322.jpg">
-                            <source media="(max-width: 1360px)" srcset="static/images/IMG_20210129_1703320.jpg">
-                            <img src="static/images/IMG_20210129_1703321.jpg" class="align-middle img-fluid"
-                                alt="Psalms">
-                        </picture>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-7">
+                            <picture>
+                                <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1703322.jpg">
+                                <source media="(max-width: 1360px)" srcset="static/images/IMG_20210129_1703320.jpg">
+                                <img src="static/images/IMG_20210129_1703321.jpg" class="align-middle img-fluid" alt="Psalms">
+                            </picture>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="h5 text-success" href="#artist">Third label</a>
+                                <p class="h3 text-muted">Pizzaiolo Tesla</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -341,13 +301,13 @@
                     <article>
                         <!--Interests-->
                         <p class="h3" id="Interests">Interests</p>
-                        <div class="card" style="width: 7.2rem;">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Skating</li>
-                                <li class="list-group-item">Coding</li>
-                                <li class="list-group-item">Surfing</li>
-                                <li class="list-group-item">MotorSport</li>
-                                <li class="list-group-item">Swimming</li>
+                        <div class="text-center">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary">Skating</li>
+                                <li class="list-group-item list-group-item-secondary">Coding</li>
+                                <li class="list-group-item list-group-item-secondary">Surfing</li>
+                                <li class="list-group-item list-group-item-secondary">MotorSport</li>
+                                <li class="list-group-item list-group-item-secondary">Swimming</li>
                             </ul>
                         </div>
                     </article>
@@ -355,35 +315,32 @@
                 <div class="col">
                     <article>
                         <!--Skills-->
-                        <p class="h3" id="Skills">Skills</p>
+                        <p class="h3" id="Skils">Skills</p>
                         <div class="container">
-                            <div class="row">
+                            <div class="row justify-content-evenly">
                                 <div class="col">
-                                    <div class="card" style="width: 7.5rem;">
-                                        <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="card-img"
-                                            id="pizzaiolo" alt="Pizzaiolo">
+                                    <div class="card" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
+                                        <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="card-img" id="pizzaiolo" alt="Pizzaiolo">
                                         <div class="card-body">
-                                            <p class="card-text">Pizzaiolo</p>
+                                            <p class="card-text text-muted">Pizzaiolo</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
 
 
-                                    <div class="card text-center" style="width: 7.5rem;">
-                                        <img src="static/images/IMG-20210121-WA0017.jpg" class="card-img-center"
-                                            id="artist" alt="Singer Producer Songwriter">
+                                    <div class="card text-center" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
+                                        <img src="static/images/IMG-20210121-WA0017.jpg" class="card-img-center" id="artist" alt="Singer Producer Songwriter">
                                         <div class="card-body">
-                                            <p class="card-text">Singer Producer Songwriter</p>
+                                            <p class="card-text text-muted">Singer Producer Songwriter</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="card text-end" style="width: 7.5rem;">
-                                        <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg"
-                                            class="card-img" id="engineer" alt="Electrician">
+                                    <div class="card text-end" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
+                                        <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg" class="card-img" id="engineer" alt="Electrician">
                                         <div class="card-body">
-                                            <p class="card-text">Electrician</p>
+                                            <p class="card-text text-muted">Electrician</p>
                                         </div>
                                     </div>
                                 </div>
@@ -412,8 +369,7 @@
                     <div class="col-md-3"><b>2017 - 2018</b></div>
                     <ul class="col-md-9 list-unstyled list">
                         <li>Joined the school church choir as a catholic member</li>
-                        <li>Attended the Catholic Schools Association <b>CASA</b> competition and brought home a bronze
-                            medal
+                        <li>Attended the Catholic Schools Association <b>CASA</b> competition and brought home a bronze medal
                         </li>
                         <li>Attended the diocesan competition and came with a silver medal</li>
                     </ul>
@@ -464,95 +420,66 @@
                 </div>
             </div>
         </article>
-    <article class="container-fluid">
-        <!--Activities-->
-        <!-- Default dropup button -->
-        <div class="btn-group dropup text-center">
-            <button type="button" class="btn btn-info btn-sm h3 dropdown-toggle badge rounded-pill"
-                data-bs-toggle="dropdown" aria-expanded="false" id="#Activities #activities">
-                <span class="badge bg-info text-white">
-                    <p class="h3">Additional Activities</p>
-                </span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="listDropdownMenuLink">
-                <!-- Dropdown menu links -->
-                <li class="dropup-item">Baking</li>
-                <li class="dropup-item">Charity</li>
-                <li class="dropup-item">Gardening</li>
-                <li class="dropup-item">Cleaning</li>
-                <li class="dropup-item">Shopping</li>
-                <li class="dropup-item">Coooking</li>
-                <li class="dropup-item">Singing</li>
-            </ul>
-        </div>
-    </article>
-    <div class="card text-center container">
-        <div class="card-header">
-            Profile
-        </div>
-        <div class="card-body p-0">
-            <h5 class="card-title">My Profile Picture</h5>
-            <p class="card-text">Ashleigh Manyanye</p>
-            <a href="#MyPicture" class="btn btn-info btn-sm">View</a>
-        </div>
-        <div class="card-footer text-muted">
-            Tanaka Tesla
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="bs-example">
-            <div class="jumbotron">
-                <h1>Learn to Create Websites</h1>
-                <p class="lead">In today's world internet is the most popular way of connecting with the people. At <a
-                        href="https://www.codespace.co.za/" target="_blank">Codespace</a> you will learn the essential
-                    of web development technologies along with real life
-                    practice examples, so that you can create your own website to connect with the people around the
-                    world.</p>
-                <p><a href="https://www.codespace.co.za/" target="_blank" class="btn btn-info btn-sm">Start Learning
-                        Today</a></p>
-            </div>
-        </div>
-    </div>
+
+        <p class="h3" id="Activities">Additional Activities</p>
+        <ul class="list-group m-2 text-center">
+            <li class="list-group-item list-group-item-secondary">Baking</li>
+            <li class="list-group-item list-group-item-secondary">Charity</li>
+            <li class="list-group-item list-group-item-secondary">Gardening</li>
+            <li class="list-group-item list-group-item-secondary">Cleaning</li>
+            <li class="list-group-item list-group-item-secondary">Shopping</li>
+            <li class="list-group-item list-group-item-secondary">Coooking</li>
+            <li class="list-group-item list-group-item-secondary">Singing</li>
+            <li class="list-group-item list-group-item-secondary">Chauffeur</li>
+        </ul>
     </main>
     <!--footer section-->
-    <footer class="text-center p-sm-2 footer">
-        <div>
-            <!--Social Media-->
-            <p class="h3" id="Social Media">Get In Touch</p>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <a href="tel: +27 631 451 765?call" target="_blank"><img class="mySocial"
-                                src="static/images/old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg"
-                                alt="Phone Icon" height="40" width="40"></a>
+    <footer class="text-center p-4 footer">
+        <!--Social Media-->
+        <p class="h3" id="Social Media">Get In Touch</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="contain col">
+                    <div class="cad">
+                        <a href="tel: +27 631 451 765?call" target="_blank">
+                            <div class="front"><img class="mySocial" src="static/images/old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg" alt="Call" height="40px" width="40px"></div>
+                            <div class="back">Call</div>
+                        </a>
                     </div>
-                    <div class="col">
-                        <a href="https://www.linkedin.com/in/aaron-leeroy-manyanye-8828101a6" target="_blank"><img
-                                class="mySocial" src="static/images/black-linkedin-icon.png" alt="LinkedIn Icon"
-                                height="40" width="40"></a>
+                </div>
+                <div class="contain col">
+                    <div class="cad">
+                        <a href="https://www.linkedin.com/in/aaron-leeroy-manyanye-8828101a6" target="_blank">
+                            <div class="front"><img class="mySocial" src="static/images/black-linkedin-icon.png" alt="LinkedIn" height="40px" width="40px"></div>
+                            <div class="back">LinkedIn</div>
+                        </a>
                     </div>
-                    <div class="col">
-                        <a href="mailto:https://www.ashleightesla@gmail.com" target="_blank"><img class="mySocial"
-                                src="static/images/mail-icon-in-flat-style-email-symbol-in-flat-style-vector-28061204.jpg"
-                                alt="Gmail Icon" height="40" width="40"></a>
+                </div>
+                <div class="contain col">
+                    <div class="cad">
+                        <a href="mailto:https://www.ashleightesla@gmail.com" target="_blank">
+                            <div class="front"><img class="mySocial" src="static/images/mail-icon-in-flat-style-email-symbol-in-flat-style-vector-28061204.jpg" alt="Email" height="40px" width="40px"></div>
+                            <div class="back">Email</div>
+                        </a>
                     </div>
-                    <div class="col">
-                        <a href="skype:live:aaronleeroy1998?chat" target="_blank"><img class="mySocial"
-                                src="static/images/614780.png" alt="Skype Icon" height="40" width="40"></a>
+                </div>
+                <div class="contain col">
+                    <div class="cad">
+                        <a href="skype:live:aaronleeroy1998?chat" target="_blank">
+                            <div class="front"><img class="mySocial" src="static/images/614780.png" alt="Skype" height="40px" width="40px">
+                            </div>
+                            <div class="back">Skype</div>
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 </body>
 
