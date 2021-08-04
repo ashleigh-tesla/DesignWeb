@@ -155,7 +155,7 @@
         <div class="container-fluid">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Did You Like It?
+                Rate My Website
             </button>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -177,7 +177,7 @@
                                     <input type="text" class="form-control" placeholder="Sparrow">
                                 </div>
                             </div>
-                            <div>
+                            <div class="p-2">
                                 <label class="label-input">Email:</label>
                                 <input type="email" class="form-control" placeholder="einstein1921@gmail.com">
                             </div>
@@ -203,6 +203,17 @@
                                 </div>
                             </div>
                             <div class="p-2">
+                                <label for="exampleDataList" class="form-label">Continent:</label>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                <datalist id="datalistOptions">
+                                    <option value="Africa">
+                                    <option value="Middle East">
+                                    <option value="Asia">
+                                    <option value="Europe">
+                                    <option value="America">
+                                </datalist>
+                            </div>
+                            <div class="p-2">
                                 <label class="label-input">Comments:</label>
                                 <textarea class="form-control" placeholder="Comment on my Digital Resume"></textarea>
                             </div>
@@ -214,7 +225,7 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         You are embarrassed
                                     </label>
@@ -317,7 +328,7 @@
                                 <div class="col">
                                     <div class="card border-dark text-start" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
                                         <img src="static/images/05_pastry_bakery-shops.1920x0.jpg" class="card-img" id="pizzaiolo" alt="Pizzaiolo">
-                                        <div class="card-body">
+                                        <div class="card-body border-dark">
                                             <p class="card-text text-muted">Pizzaiolo</p>
                                         </div>
                                     </div>
@@ -325,7 +336,7 @@
                                 <div class="col">
                                     <div class="card border-dark text-center" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
                                         <img src="static/images/IMG-20210121-WA0017.jpg" class="card-img-center" id="artist" alt="Singer Producer Songwriter">
-                                        <div class="card-body">
+                                        <div class="card-body border-dark">
                                             <p class="card-text text-muted">Singer Producer Songwriter</p>
                                         </div>
                                     </div>
@@ -333,7 +344,7 @@
                                 <div class="col">
                                     <div class="card border-dark text-end" style="width: 12.0rem; margin: 3rem; background-color: rgba(255, 214, 137, 0.973);">
                                         <img src="static/images/89049676_230452275003311_1576619156478885888_n.jpg" class="card-img" id="engineer" alt="Electrician">
-                                        <div class="card-body">
+                                        <div class="card-body border-dark">
                                             <p class="card-text text-muted">Electrician</p>
                                         </div>
                                     </div>
@@ -387,7 +398,8 @@
                     <ul class="col-md-9 list-unstyled list">
                         <li>First year student at Stellenbosch University</li>
                         <li>Earned an INTRO TO WEB certificate with Codespace College</li>
-                        <li>Received an Introduction To Coding certificate with Digital Regenesys Business School</li>
+                        <li>Received an Introduction To Coding certificate with Digital Regenesys Business School
+                        </li>
                     </ul>
                 </div>
             </div>
