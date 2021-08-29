@@ -17,8 +17,8 @@ ul.list li:first-child {
 }
 
 .cad {
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     position: relative;
     transition: all 1s linear;
     transform-style: preserve-3d
